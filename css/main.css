@@ -1,0 +1,41 @@
+/* GENERAL */
+body {
+    padding-top: 70px;
+}
+
+/* UTILITIES */
+.blue-text {
+    color: #3A8AFF;
+}
+
+
+/* HEADER */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+.main-header .ta-logo {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+}
+
+.main-header ul li a {
+    color: #000;
+}
+
+.main-header ul li a.btn {
+    color: #3A8AFF;
+    border-color: #3A8AFF;
+    transition: background .3s;
+}
+
+.main-header ul li a.btn:hover {
+    color: #fff;
+    background: #3A8AFF;
+}

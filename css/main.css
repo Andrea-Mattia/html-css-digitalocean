@@ -46,7 +46,7 @@ body {
     color: #6F7B97;
 }
 
-.table-text {
+.l-gray-text {
     color: #BBC9EB;
 }
 
@@ -218,4 +218,32 @@ body {
 .dev-card .ta-card div:last-child {
     padding-top: 2rem;
     padding-bottom: 4rem;
+}
+
+/* GET STARTED SECTION */
+.get-started .ta-btn {
+    margin-bottom: 4rem;
+    color: #3A8AFF;
+}
+
+/* FOOTER */
+.main-foot {
+    background: #031C4E;
+}
+
+.main-foot ul li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.main-foot ul li a {
+    list-style: none;
+    color: #BBC9EB;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 991px) {
+    .main-foot h4.white-text {
+        padding-top: 2rem;
+    }
 }

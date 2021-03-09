@@ -136,3 +136,55 @@ body {
     padding: 5px 10px;
     border-left: 1px solid #6F7B97;
 }
+
+/* DEVELOPER SLIDE SECTION */
+.dev-slide {
+    background: #f3f5f9;
+}
+
+.dev-slide img {
+    width: 100%;
+}
+
+/* REMOVING PD AND MG BOT IN DESKTOP VIEW */
+@media screen and (min-width: 991px) {
+    .dev-slide .slide-img,
+    .dev-slide .slide-sub {
+        padding-bottom: 0;
+    }
+
+    .dev-slide .circle-nav {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* ADD ARROWS TO SLIDE */
+@media screen and (min-width: 768px) {
+    .dev-slide .ta-slide {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+    }
+
+    .dev-slide .slide-img::before {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+        color: rgba(0,0,0, .5);
+        font-size: 60px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f104";
+    }
+    
+    .dev-slide .slide-img::after {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        font-size: 60px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f105";
+    }
+}

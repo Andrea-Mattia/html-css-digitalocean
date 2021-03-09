@@ -5,6 +5,8 @@ body {
 }
 
 /* UTILITIES */
+
+/* padding and margin */
 .mg-t-b {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -31,6 +33,7 @@ body {
     padding-bottom: 1rem;
 }
 
+/* colors */
 .blue-text {
     color: #3A8AFF;
 }
@@ -47,6 +50,21 @@ body {
     color: #BBC9EB;
 }
 
+.gray-bg {
+    background: #F3F5F9
+}
+
+.grad-bg {
+    background-image: linear-gradient(#0047C5, #001E9A);
+}
+
+/* card */
+.ta-card {
+    margin-top: 2rem;
+    padding: 15px;
+    background: #fff;
+    border-radius: 6px;
+}
 
 /* HEADER */
 .main-header {
@@ -91,12 +109,6 @@ body {
     color: #BBCDFF;
 }
 
-.jumbo .ta-card {
-    margin-top: 2rem;
-    padding: 15px;
-    background: #fff;
-    border-radius: 5px;
-}
 
 .jumbo .ta-card .btn.btn-default {
     position: relative;
@@ -111,10 +123,6 @@ body {
 }
 
 /* BRAND LOGO SECTION */
-.ta-brand-logo {
-    background: #F3F5F9;
-}
-
 .ta-brand-logo ul li {
     width: calc((100% / 6) * 2);
 }
@@ -142,10 +150,6 @@ body {
 }
 
 /* DEVELOPER SLIDE SECTION */
-.dev-slide {
-    background: #f3f5f9;
-}
-
 .dev-slide img {
     width: 100%;
 }
@@ -163,15 +167,17 @@ body {
     }
 }
 
-/* ADD ARROWS TO SLIDE */
+/* ADD ARROWS TO SLIDE AND CARD */
 @media screen and (min-width: 768px) {
-    .dev-slide .ta-slide {
+    .dev-slide .ta-slide,
+    .dev-card .ta-card {
         display: inline-block;
         width: 80%;
         vertical-align: middle;
     }
 
-    .dev-slide .slide-img::before {
+    .dev-slide .slide-img::before,
+    .dev-card .card-img::before {
         display: inline-block;
         vertical-align: middle;
         padding-right: 10px;
@@ -182,7 +188,8 @@ body {
         content: "\f104";
     }
     
-    .dev-slide .slide-img::after {
+    .dev-slide .slide-img::after,
+    .dev-card .card-img::after {
         display: inline-block;
         vertical-align: middle;
         padding-left: 10px;
@@ -194,10 +201,21 @@ body {
 }
 
 /* TABLE SECTION */
-.table-sec {
-    background-image: linear-gradient(#0047C5, #001E9A);
-}
-
 .table-sec table a {
     color: #00D7D2;
+}
+
+/* DEV SLIDE CARD SECTION */
+.dev-card img {
+    padding-top: 5rem;
+    width: 100%;
+}
+
+.dev-card .card-sub {
+    font-size: 20px;
+}
+
+.dev-card .ta-card div:last-child {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }

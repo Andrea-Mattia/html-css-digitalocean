@@ -39,6 +39,10 @@ body {
     color: #fff;
 }
 
+.gray-text {
+    color: #6F7B97;
+}
+
 
 /* HEADER */
 .main-header {
@@ -46,6 +50,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
     height: 50px;
     line-height: 50px;
     background: #fff;
@@ -99,4 +104,24 @@ body {
     left: 6px;
     top: 6px;
     width: 20px;
+}
+
+/* BRAND LOGO SECTION */
+.ta-brand-logo {
+    background: #F3F5F9;
+}
+
+.ta-brand-logo ul li {
+    width: calc((100% / 6) * 2);
+}
+
+.ta-brand-logo img {
+    width: 100%;
+}
+
+/* MEDIA FOR BRAND LOGOS */
+@media screen and (min-width: 768px) {
+    .ta-brand-logo ul li {
+        width: calc((100% / 6) - 20px);
+    }
 }

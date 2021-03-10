@@ -105,7 +105,12 @@ body {
     background-size: cover;
 }
 
+.jumbo .white-text h1 {
+    font-size: 42px;
+}
+
 .jumbo .white-text p {
+    font-size: 20px;
     color: #BBCDFF;
 }
 

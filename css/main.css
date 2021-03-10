@@ -234,7 +234,7 @@ body {
 }
 
 .help-fix .help-text {
-    display: none;
+    visibility: hidden;
     position: relative;
     width: 290px;
     padding: 10px 5px;
@@ -245,7 +245,7 @@ body {
 }
 
 .help-fix:hover .help-text {
-    display: block;
+    visibility: visible;
 }
 
 .help-fix .help-text .square {

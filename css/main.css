@@ -136,13 +136,6 @@ body {
     width: 100%;
 }
 
-/* MEDIA FOR BRAND LOGOS */
-@media screen and (min-width: 768px) {
-    .ta-brand-logo ul li {
-        width: calc((100% / 6) - 20px);
-    }
-}
-
 /* DEPLOY SECTION */
 .deploy .ta-list ul {
     padding-inline-start: 0;
@@ -151,58 +144,22 @@ body {
 .deploy .ta-list li {
     list-style: none;
     padding: 5px 10px;
+    width: 70px;
     border-left: 1px solid #6F7B97;
+    transition: background .3s;
+}
+
+.deploy .ta-list li:hover {
+    background: #75aaf869;
+}
+
+.deploy .ta-list li a {
+    color: #6F7B97;
 }
 
 /* DEVELOPER SLIDE SECTION */
 .dev-slide img {
     width: 100%;
-}
-
-/* REMOVING PD AND MG BOT IN DESKTOP VIEW */
-@media screen and (min-width: 991px) {
-    .dev-slide .slide-img,
-    .dev-slide .slide-sub {
-        padding-bottom: 0;
-    }
-
-    .dev-slide .circle-nav {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-/* ADD ARROWS TO SLIDE AND CARD */
-@media screen and (min-width: 768px) {
-    .dev-slide .ta-slide,
-    .dev-card .ta-card {
-        display: inline-block;
-        width: 80%;
-        vertical-align: middle;
-    }
-
-    .dev-slide .slide-img::before,
-    .dev-card .card-img::before {
-        display: inline-block;
-        vertical-align: middle;
-        padding-right: 10px;
-        color: rgba(0,0,0, .5);
-        font-size: 60px;
-        font-family: "Font Awesome 5 Free"; 
-        font-weight: 900; 
-        content: "\f104";
-    }
-    
-    .dev-slide .slide-img::after,
-    .dev-card .card-img::after {
-        display: inline-block;
-        vertical-align: middle;
-        padding-left: 10px;
-        font-size: 60px;
-        font-family: "Font Awesome 5 Free"; 
-        font-weight: 900; 
-        content: "\f105";
-    }
 }
 
 /* TABLE SECTION */
@@ -247,6 +204,71 @@ body {
     font-weight: bold;
 }
 
+
+/*************************
+ MEDIA QUERIES 
+ *************************/
+
+/* BRAND LOGO SECTION */
+
+/* brand logos width in tablet and desktop */
+@media screen and (min-width: 768px) {
+    .ta-brand-logo ul li {
+        width: calc((100% / 6) - 20px);
+    }
+}
+
+/* DEVELOPER SLIDE SECTION */
+
+/* removing pd and mg bot in desktop view */
+@media screen and (min-width: 991px) {
+    .dev-slide .slide-img,
+    .dev-slide .slide-sub {
+        padding-bottom: 0;
+    }
+
+    .dev-slide .circle-nav {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* add arrows to slide and card */
+@media screen and (min-width: 768px) {
+    .dev-slide .ta-slide,
+    .dev-card .ta-card {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+    }
+
+    .dev-slide .slide-img::before,
+    .dev-card .card-img::before {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 10px;
+        color: rgba(0,0,0, .5);
+        font-size: 60px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f104";
+    }
+    
+    .dev-slide .slide-img::after,
+    .dev-card .card-img::after {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        font-size: 60px;
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        content: "\f105";
+    }
+}
+
+/* FOOTER */
+
+/* aligning foot columns in desktop view */
 @media screen and (min-width: 991px) {
     .main-foot h4.white-text {
         padding-top: 2rem;
